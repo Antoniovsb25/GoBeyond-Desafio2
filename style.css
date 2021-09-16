@@ -52,13 +52,18 @@ button {
     border: none;
     background-color: #FAA900;
     color: #fff;
-    padding: 0.75rem;
+    padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.5s ease;
+    margin: 0.75rem;
 }
 
 button:hover {
     transform: scale(1.1);
+}
+
+.content {
+    color: green;
 }

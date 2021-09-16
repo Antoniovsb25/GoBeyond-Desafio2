@@ -11,19 +11,22 @@ form.addEventListener("submit", (e) => {
   const totalVendasFormatado = parseFloat(totalVendas);
   const totalVendas2casas = totalVendasFormatado.toFixed(2);
 
-  function salarioTotal(nome, sal, totalVendas) {
+  function salarioTotal(sal, totalVendas) {
     let total = (sal + totalVendas * 0.15).toFixed(2);
-    return `${nome} receberá um salário total de ${total} reais`;
+    return total
   }
 
-  console.log(salarioTotal(nome, salarioFormatado, totalVendasFormatado));
-
+  const salTot = (salarioTotal(salarioFormatado, totalVendasFormatado));
+ 
   let funcionarioData = {
     nome: nome,
     salario: salario2casas,
     totalEmVendas: totalVendas2casas,
+    salarioTotal: salTot
   };
-
   funcionarios.push(funcionarioData);
+  console.table(funcionarioData)
   console.table(funcionarios);
+  alert(`Funcionário ${funcionarioData.nome} adicionado com sucesso!`)
 });
+
