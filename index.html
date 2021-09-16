@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Funcionários</title>
@@ -14,16 +15,22 @@
     <main>
       <section class="form-container">
         <form id="formulario" action="">
-          <input id="nome" type="text" placeholder="nome" />
-          <input id="salario" type="text" placeholder="salário" />
+          <input id="nome" type="text" placeholder="nome" required />
+          <input id="salario" type="text" placeholder="salário" required />
           <input
             id="totalVendas"
             type="text"
             placeholder="total de vendas (em reais)"
+            required
           />
-          <button type="submit">Add</button>
+          <button type="submit">ADICIONAR</button>
         </form>
       </section>
+      <footer>
+          <div class="footer">
+              <h2>desenvolvido por Antônio Basilio</h2>
+          </div>
+      </footer>
     </main>
   </body>
   <script src="script.js"></script>
